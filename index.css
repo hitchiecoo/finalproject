@@ -1,7 +1,7 @@
 body {
     margin: 10px;
     margin-top:0px;
-    font-family: playfair display;
+    font-family: roboto;
 }
 
 .navigation {
@@ -106,7 +106,6 @@ body {
         display: grid;
         grid-gap:10px;
         grid-template-columns: repeat(2, 1fr);}
-        
 }
 
 @media (min-width: 1024px) {
@@ -115,12 +114,12 @@ body {
         grid-template-columns: 20% 26% 26% 26%;}
 }
 
+/* intro */
+
 .welcome-text{
     align-items: center;
     margin: 20px;
-    padding: 10px;
     color: gray;
-    margin-right: 100px;
     border-radius: 8px;
     font-family: playfair display;
     text-align: justify;
@@ -130,12 +129,13 @@ body {
 .welcome-span {
     font-size: 1.9rem;
     color: rgb(40, 40, 40);
+    text-align: center;
 }
 
 .imagecontainer-1 img {
     object-fit: cover;
     height: 300px;
-    width: 300px;
+    width: 100%;
     border-radius: 8px;
     opacity: 90%;
     
@@ -144,7 +144,7 @@ body {
 .imagecontainer-2 img {
     object-fit: cover;
     height: 300px;
-    width: 300px;
+    width: 100%;
     border-radius: 8px;
     opacity: 90%;
     
@@ -153,7 +153,7 @@ body {
 .imagecontainer-3 img {
     object-fit: cover;
     height: 300px;
-    width: 300px;
+    width: 100%;
     border-radius: 8px;
     opacity: 90%;
     
@@ -195,6 +195,7 @@ body {
     padding-top:0px;
 }
 
+/*main grid template */
 @media (min-width: 1024px) {
     .blog-latest {
         grid-template-columns: repeat(4, 1fr) ;}
@@ -212,10 +213,9 @@ body {
     gap: 10px;
   }
   
- 
 
 .rectangle {
-background-image: url(./20230507_171920.jpg);
+background-image: url(./hongkong.jpeg);
 background-size: cover;
 }
 
@@ -239,8 +239,7 @@ background-size: cover;
     align-items: flex-start;
     flex-direction: column;
     margin-top: 170px;
-    background-color: rgba(189, 188, 188, 0.7);
-   
+    background-color: rgba(189, 188, 188, 0.7);   
 }
 
 .rectangle h3 {
@@ -254,27 +253,25 @@ background-size: cover;
     padding-left: 10px;
 }
 .square-1 {
-    background: url(./20220426_090547.jpg);
-    background-size: cover;
-   
+    background: url(./regal.jpeg);
+    background-size: cover;   
 }
 
 .square-2 {
-    background: url(./20231113_091551.jpg);
-    background-size: cover;
-    
+    background: url(./archieimage.jpg);
+    background-size: cover;    
 }
 
 .square-3 {
-    background: url(./20231109_102221.jpg);
-    background-size: cover;
-    
+    background: url(./tako-kitten.jpg);
+    background-size: cover;   
 }
 
 .square-4 {
-    background: url(./archie.jpg);
+    background: url(./chill.jpg);
     background-size: cover;
 }
+
 /* modal css*/
 .modal {
     display: none; /* Hidden by default */
@@ -313,8 +310,8 @@ background-size: cover;
     padding: 1.3rem;
     min-height: 250px;
     position: absolute;
-    top: 30%;
-    left:30%;
+    top: 30px;
+    left:auto;
     background-color: white;
     border: 1px solid rgb(222, 222, 222);
     border-radius: 15px;
@@ -380,12 +377,7 @@ background-size: cover;
     margin: 0px;
     padding: 10px;
 }
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/*footer */
 
 footer {
     display: flex;
@@ -414,6 +406,8 @@ footer .nav{
     color: palevioletred;
 }
 
+
+/*decor for submit button */
 #myBtn {
     padding: 0.8rem 1.4rem;
    font-weight: 700;
@@ -422,6 +416,10 @@ footer .nav{
    color: white;
    border: 1px solid;
    border-radius: 5px;
+}
+
+#myBtn:hover {
+    background-color: rgb(218, 216, 216);
 }
 
 #myBtn:hover {
