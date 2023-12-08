@@ -1,11 +1,11 @@
   // Get the modal
-  var modal = document.querySelector("#myModal");
+  const modal = document.querySelector("#myModal");
 
   // Get the button that opens the modal
-  var btn = document.querySelector("#myBtn");
+  const btn = document.querySelector("#myBtn");
 
   // Get the <span> element that closes the modal
-  var close = document.querySelector(".close");
+  const close = document.querySelector(".close");
 
   // When the user clicks on the button, open the modal
   btn.addEventListener('click', function () {
