@@ -2,6 +2,7 @@ body {
     margin: 10px;
     margin-top:0px;
     font-family: roboto;
+    font-size:1.1rem;
 }
 
 .navigation {
@@ -99,6 +100,7 @@ body {
     gap: 5px;
     margin-top: 80px;
     width: inherit;
+    margin-right: 50px;
  }
 
  @media (min-width: 768px) {
@@ -106,15 +108,14 @@ body {
         display: grid;
         grid-gap:10px;
         grid-template-columns: repeat(2, 1fr);}
+        
 }
 
 @media (min-width: 1024px) {
     .welcome {
         display: grid;
-        grid-template-columns: 20% 26% 26% 26%;}
+        grid-template-columns: 20% 26% 26% 26%;};
 }
-
-/* intro */
 
 .welcome-text{
     align-items: center;
@@ -195,7 +196,6 @@ body {
     padding-top:0px;
 }
 
-/*main grid template */
 @media (min-width: 1024px) {
     .blog-latest {
         grid-template-columns: repeat(4, 1fr) ;}
@@ -213,6 +213,7 @@ body {
     gap: 10px;
   }
   
+ 
 
 .rectangle {
 background-image: url(./hongkong.jpeg);
@@ -239,7 +240,8 @@ background-size: cover;
     align-items: flex-start;
     flex-direction: column;
     margin-top: 170px;
-    background-color: rgba(189, 188, 188, 0.7);   
+    background-color: rgba(189, 188, 188, 0.7);
+   
 }
 
 .rectangle h3 {
@@ -254,26 +256,56 @@ background-size: cover;
 }
 .square-1 {
     background: url(./regal.jpeg);
-    background-size: cover;   
+    background-size: cover;
+   
 }
 
 .square-2 {
     background: url(./archieimage.jpg);
-    background-size: cover;    
+    background-size: cover;
+    
 }
 
 .square-3 {
     background: url(./tako-kitten.jpg);
-    background-size: cover;   
+    background-size: cover;
+    
 }
 
 .square-4 {
     background: url(./chill.jpg);
     background-size: cover;
 }
-
 /* modal css*/
-.modal-content {
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 1.3rem; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    min-height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-content .top {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: inherit;
+  }
+  /* modal p */
+  .modal p {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 10px 20px;
+    z-index: 1;
+  }
+  /* Modal Content */
+  .modal-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -288,38 +320,6 @@ background-size: cover;
     background-color: white;
     border: 1px solid rgb(222, 222, 222);
     border-radius: 15px;
-  }
-
-  .modal-content .top {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      align-items: center;
-      width: inherit;
-  }
-  /* modal p */
-  .modal p {
-    font-size: 0.9rem;
-    color: #777;
-    margin: 0.4rem 0 0.2rem;
-    z-index: 1;
-  }
-  /* Modal Content */
-  .modal-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 11px;
-    width: 450px;
-    padding: 1.3rem;
-    min-height: 250px;
-    position: absolute;
-    top: 30px;
-    left:auto;
-    background-color: white;
-    border: 1px solid rgb(222, 222, 222);
-    border-radius: 15px;
-    
   }
   
   /* The Close Button */
@@ -420,10 +420,6 @@ footer .nav{
    color: white;
    border: 1px solid;
    border-radius: 5px;
-}
-
-#myBtn:hover {
-    background-color: rgb(218, 216, 216);
 }
 
 #myBtn:hover {

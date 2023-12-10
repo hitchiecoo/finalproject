@@ -1,0 +1,275 @@
+body {
+    margin: 10px;
+    margin-top:0px;
+    font-family: roboto;
+    background-color: white;
+    width:100%;
+}
+    
+.navigation {
+    background-color: rgba(242, 239, 239, 0.7);
+    height: 60px;
+    display: flex;
+    justify-content:space-between;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+   margin-right: 20px;
+}
+
+
+.nav-logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    opacity: 0.7;
+ }
+
+.nav-list ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: inherit;
+    padding-right: 20px;
+}
+
+.nav-list li {
+    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 20px;
+    color: grey;
+    align-items: center;
+    
+}
+.nav-list a {
+    text-decoration: none;
+    color: gray;
+}
+.nav-list a:hover {
+    color: pink;
+}
+
+.link {
+    background-color: inherit;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.dropdown > .link:focus {
+    color: pink;
+}
+
+.dropdown a, .link:hover {
+    color: pink;
+    padding-bottom: 5px;
+}
+
+
+.dropdown {
+    position: relative;
+    color: inherit;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    line-height: 1.5rem;
+    background-color: white;
+    padding:10px;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0px rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: auto;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown > .link:focus + .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (min-width: 748px) {
+        .photos {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 0px;
+    }
+}
+/* main background adjustents */
+main {
+    height: 100vh;
+}
+
+/* changing background for javascript*/
+
+.eat {
+    background-image: url(./eating.jpeg);
+    background-size: contain;
+  }
+  .sleep {
+    background-image: url(./sleep.jpeg);
+    background-size: contain;
+}
+ 
+.lounge{
+    background-image: url(./chill.jpg);
+    background-size: contain;
+}
+
+.cute {
+    background-image: url(./please.jpeg);
+    background-size: contain;
+}
+
+.dressup {
+    background-image: url(./dressup.jpeg);
+    background-size: contain;
+}
+
+
+
+ /*intro decor */
+.activity {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 30%;
+    opacity: 0.8;
+}
+.daily-act {
+    text-align: center;
+   
+}
+
+
+/* form decoration*/
+
+.title {
+    color: palevioletred;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.cat {
+    text-decoration: bold;
+    text-transform: uppercase;
+    color: hotpink;
+}
+#cat-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(128, 124, 124);
+    width: 300px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: rgb(172, 172, 172) 8px 8px 10px 1px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:100px;
+}
+
+
+h4 {
+color: rgb(243, 99, 123);
+text-align: center;
+width: inherit;
+}
+
+.list {
+    color: grey;
+    text-align: center;
+
+
+}
+#cat-form ul {
+    padding-left: 0px;
+}
+
+.toDo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#activity-type {
+padding: 8px;
+color: rgb(121, 94, 122);
+border: 1px solid pink;
+width: 200px;
+
+}
+
+#submit-btn {
+    color: rgb(171, 165, 165);
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(160, 95, 118);
+    position: relative;
+}
+#submit-btn:hover {
+ background-color: rgb(155, 171, 224);
+}
+
+.input-field {
+    border: 0.06rem solid #d2d2d2bf;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+/*footer*/
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    background-color: rgb(177, 176, 176);
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    margin-right: 20px;
+}
+footer .nav{
+    font-size: 0.8rem;
+}
+
+.footer-links li{
+    display: inline-block;
+ 
+}
+
+.footer-links a {
+    color: rgb(253, 253, 253);
+    margin-right: 5px;
+}
+
+.footer-links a:hover {
+    color: palevioletred;
+}
