@@ -12,6 +12,6 @@ please follow the steps below to ensure the best way to navigate through my webs
 please feel free to offer me any suggestions so i can improve user experience for my blog :)
 
 
-https://hitchiecoo.github.io/finalproject/
+<a href="https://hitchiecoo.github.io/finalproject/"> link to my blog </a>
 
 
